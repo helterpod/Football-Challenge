@@ -19,6 +19,7 @@
 		FE35D07E2C68C67E00F9FDDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE35D0802C68C67E00F9FDDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE35D0832C68C67E00F9FDDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE35D08A2C68C8F300F9FDDD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				FE35D07E2C68C67E00F9FDDD /* ContentView.swift */,
 				FE35D0802C68C67E00F9FDDD /* Assets.xcassets */,
 				FE35D0822C68C67E00F9FDDD /* Preview Content */,
+				FE35D08A2C68C8F300F9FDDD /* Config.xcconfig */,
 			);
 			path = "Football Challenge";
 			sourceTree = "<group>";
