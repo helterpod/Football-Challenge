@@ -19,7 +19,8 @@
 		FE35D07E2C68C67E00F9FDDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE35D0802C68C67E00F9FDDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE35D0832C68C67E00F9FDDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FE35D08A2C68C8F300F9FDDD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		FE35D08C2C68CA8100F9FDDD /* Football-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Football-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +53,12 @@
 		FE35D07B2C68C67E00F9FDDD /* Football Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				FE35D08C2C68CA8100F9FDDD /* Football-Challenge-Info.plist */,
 				FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */,
 				FE35D07E2C68C67E00F9FDDD /* ContentView.swift */,
 				FE35D0802C68C67E00F9FDDD /* Assets.xcassets */,
 				FE35D0822C68C67E00F9FDDD /* Preview Content */,
-				FE35D08A2C68C8F300F9FDDD /* Config.xcconfig */,
+				FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */,
 			);
 			path = "Football Challenge";
 			sourceTree = "<group>";
@@ -149,6 +151,7 @@
 /* Begin XCBuildConfiguration section */
 		FE35D0852C68C67E00F9FDDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -212,6 +215,7 @@
 		};
 		FE35D0862C68C67E00F9FDDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -277,6 +281,7 @@
 				DEVELOPMENT_TEAM = Z7SY56C68T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Football-Challenge-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -306,6 +311,7 @@
 				DEVELOPMENT_TEAM = Z7SY56C68T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Football-Challenge-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
