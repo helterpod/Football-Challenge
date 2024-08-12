@@ -11,6 +11,9 @@
 		FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D07E2C68C67E00F9FDDD /* ContentView.swift */; };
 		FE35D0812C68C67E00F9FDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35D0802C68C67E00F9FDDD /* Assets.xcassets */; };
 		FE35D0842C68C67E00F9FDDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35D0832C68C67E00F9FDDD /* Preview Assets.xcassets */; };
+		FE35D0902C68D35D00F9FDDD /* TeamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D08F2C68D35D00F9FDDD /* TeamList.swift */; };
+		FE35D0922C68D51C00F9FDDD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D0912C68D51C00F9FDDD /* Team.swift */; };
+		FE35D0942C6A03F300F9FDDD /* FootballDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D0932C6A03F300F9FDDD /* FootballDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		FE35D0832C68C67E00F9FDDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		FE35D08C2C68CA8100F9FDDD /* Football-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Football-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FE35D08F2C68D35D00F9FDDD /* TeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamList.swift; sourceTree = "<group>"; };
+		FE35D0912C68D51C00F9FDDD /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		FE35D0932C6A03F300F9FDDD /* FootballDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,8 @@
 		FE35D07B2C68C67E00F9FDDD /* Football Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				FE35D08E2C68CDB700F9FDDD /* DataSources */,
+				FE35D08D2C68CDAC00F9FDDD /* Models */,
 				FE35D08C2C68CA8100F9FDDD /* Football-Challenge-Info.plist */,
 				FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */,
 				FE35D07E2C68C67E00F9FDDD /* ContentView.swift */,
@@ -69,6 +77,23 @@
 				FE35D0832C68C67E00F9FDDD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE35D08D2C68CDAC00F9FDDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE35D08F2C68D35D00F9FDDD /* TeamList.swift */,
+				FE35D0912C68D51C00F9FDDD /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE35D08E2C68CDB700F9FDDD /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				FE35D0932C6A03F300F9FDDD /* FootballDataSource.swift */,
+			);
+			path = DataSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE35D0922C68D51C00F9FDDD /* Team.swift in Sources */,
 				FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */,
 				FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */,
+				FE35D0942C6A03F300F9FDDD /* FootballDataSource.swift in Sources */,
+				FE35D0902C68D35D00F9FDDD /* TeamList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
