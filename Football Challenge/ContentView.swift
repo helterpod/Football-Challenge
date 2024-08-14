@@ -20,12 +20,14 @@ struct ContentView: View {
                 VStack(alignment: .leading) {
                     TeamSummary(team: team)
                 }
+                .listRowSeparator(.hidden)
             }
+            .listStyle(.plain)
             
             Spacer()
             Button("Click for teams") {
                 Task {
-                    await getTeams()
+                    await getTeams(4)
                 }
             }
         }
@@ -35,10 +37,10 @@ struct ContentView: View {
 //        })
     }
     
-    func getTeams() async {
+    func getTeams(_ numTeams: Int = 25) async {
         let ds = FootballDataSource()
         
-        teams = await ds.getTeamsList()
+        teams = await ds.getTeamsList(numTeams)
     }
 }
 

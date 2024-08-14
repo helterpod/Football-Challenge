@@ -11,7 +11,7 @@ struct FootballDataSource {
     
     let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
     
-    func getTeamsList() async -> [Team] {
+    func getTeamsList(_ numTeams: Int = 25) async -> [Team] {
         // Check we have an api key
         guard apiKey != nil else {
             print("No api key")
@@ -19,7 +19,7 @@ struct FootballDataSource {
         }
         
         // Form URL
-        if let url = URL(string: "https://api.football-data.org/v4/teams?limit=25") {
+        if let url = URL(string: "https://api.football-data.org/v4/teams?limit=\(numTeams)") {
             
             // Create the request
             var request = URLRequest(url: url)
