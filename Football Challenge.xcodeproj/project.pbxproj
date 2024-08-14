@@ -18,12 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		647A72E12C6D3711001978E9 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		FE35D0792C68C67E00F9FDDD /* Football Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_ChallengeApp.swift; sourceTree = "<group>"; };
 		FE35D07E2C68C67E00F9FDDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE35D0802C68C67E00F9FDDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE35D0832C68C67E00F9FDDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		FE35D08C2C68CA8100F9FDDD /* Football-Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Football-Challenge-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FE35D08F2C68D35D00F9FDDD /* TeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamList.swift; sourceTree = "<group>"; };
 		FE35D0912C68D51C00F9FDDD /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				FEB11C642C6BD71B00C996C4 /* TeamSummary.swift */,
 				FE35D0802C68C67E00F9FDDD /* Assets.xcassets */,
 				FE35D0822C68C67E00F9FDDD /* Preview Content */,
-				FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */,
+				647A72E12C6D3711001978E9 /* Config.xcconfig */,
 			);
 			path = "Football Challenge";
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 /* Begin XCBuildConfiguration section */
 		FE35D0852C68C67E00F9FDDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */;
+			baseConfigurationReference = 647A72E12C6D3711001978E9 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -255,7 +255,7 @@
 		};
 		FE35D0862C68C67E00F9FDDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */;
+			baseConfigurationReference = 647A72E12C6D3711001978E9 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
