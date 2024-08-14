@@ -12,4 +12,6 @@ struct Team : Identifiable, Decodable {
     var name: String?
     var shortName: String?
     var tla: String?
+    var founded: Int?
+    var venue: String?
 }

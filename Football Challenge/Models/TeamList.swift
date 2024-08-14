@@ -7,13 +7,15 @@
 
 import Foundation
 
+struct Filters : Decodable {
+    var limit: Int?
+    var offset: Int?
+    var permission: String?
+}
+
 struct TeamList : Decodable {
     var count: Int?
-    struct filters {
-        var limit: Int?
-        var offset: Int?
-        var permission: String?
-    }
+    var filters: Filters = Filters()
     var teams: [Team] = [Team]()
 }
 

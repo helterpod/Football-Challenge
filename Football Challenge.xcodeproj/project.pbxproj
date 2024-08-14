@@ -14,6 +14,7 @@
 		FE35D0902C68D35D00F9FDDD /* TeamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D08F2C68D35D00F9FDDD /* TeamList.swift */; };
 		FE35D0922C68D51C00F9FDDD /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D0912C68D51C00F9FDDD /* Team.swift */; };
 		FE35D0942C6A03F300F9FDDD /* FootballDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D0932C6A03F300F9FDDD /* FootballDataSource.swift */; };
+		FEB11C652C6BD71B00C996C4 /* TeamSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB11C642C6BD71B00C996C4 /* TeamSummary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FE35D08F2C68D35D00F9FDDD /* TeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamList.swift; sourceTree = "<group>"; };
 		FE35D0912C68D51C00F9FDDD /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		FE35D0932C6A03F300F9FDDD /* FootballDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballDataSource.swift; sourceTree = "<group>"; };
+		FEB11C642C6BD71B00C996C4 /* TeamSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSummary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,13 @@
 		FE35D07B2C68C67E00F9FDDD /* Football Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				FEB11C632C6BBE6A00C996C4 /* ViewModels */,
 				FE35D08E2C68CDB700F9FDDD /* DataSources */,
 				FE35D08D2C68CDAC00F9FDDD /* Models */,
 				FE35D08C2C68CA8100F9FDDD /* Football-Challenge-Info.plist */,
 				FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */,
 				FE35D07E2C68C67E00F9FDDD /* ContentView.swift */,
+				FEB11C642C6BD71B00C996C4 /* TeamSummary.swift */,
 				FE35D0802C68C67E00F9FDDD /* Assets.xcassets */,
 				FE35D0822C68C67E00F9FDDD /* Preview Content */,
 				FE35D08B2C68CA2100F9FDDD /* Config.xcconfig */,
@@ -94,6 +98,13 @@
 				FE35D0932C6A03F300F9FDDD /* FootballDataSource.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		FEB11C632C6BBE6A00C996C4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				FE35D0922C68D51C00F9FDDD /* Team.swift in Sources */,
 				FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */,
 				FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */,
+				FEB11C652C6BD71B00C996C4 /* TeamSummary.swift in Sources */,
 				FE35D0942C6A03F300F9FDDD /* FootballDataSource.swift in Sources */,
 				FE35D0902C68D35D00F9FDDD /* TeamList.swift in Sources */,
 			);

@@ -17,7 +17,9 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
 
             List(teams) { team in
-                Text(team.name ?? "Blank")
+                VStack(alignment: .leading) {
+                    TeamSummary(team: team)
+                }
             }
             
             Spacer()
