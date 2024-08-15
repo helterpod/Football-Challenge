@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641142972C6D569A00BB3CCE /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641142962C6D569A00BB3CCE /* Competition.swift */; };
+		641142992C6D586B00BB3CCE /* CompetitionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641142982C6D586B00BB3CCE /* CompetitionList.swift */; };
 		FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */; };
 		FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D07E2C68C67E00F9FDDD /* ContentView.swift */; };
 		FE35D0812C68C67E00F9FDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35D0802C68C67E00F9FDDD /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641142962C6D569A00BB3CCE /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
+		641142982C6D586B00BB3CCE /* CompetitionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionList.swift; sourceTree = "<group>"; };
 		647A72E12C6D3711001978E9 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		FE35D0792C68C67E00F9FDDD /* Football Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_ChallengeApp.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			children = (
 				FE35D08F2C68D35D00F9FDDD /* TeamList.swift */,
 				FE35D0912C68D51C00F9FDDD /* Team.swift */,
+				641142962C6D569A00BB3CCE /* Competition.swift */,
+				641142982C6D586B00BB3CCE /* CompetitionList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 				FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */,
 				FEB11C652C6BD71B00C996C4 /* TeamSummary.swift in Sources */,
 				FE35D0942C6A03F300F9FDDD /* FootballDataSource.swift in Sources */,
+				641142972C6D569A00BB3CCE /* Competition.swift in Sources */,
 				FE35D0902C68D35D00F9FDDD /* TeamList.swift in Sources */,
+				641142992C6D586B00BB3CCE /* CompetitionList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

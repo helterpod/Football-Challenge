@@ -11,6 +11,7 @@ struct Filters : Decodable {
     var limit: Int?
     var offset: Int?
     var permission: String?
+    var areas: [Int]?
 }
 
 struct TeamList : Decodable {

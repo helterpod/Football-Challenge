@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @State var teams : [Team] = [Team]()
+    @State var comps : [Competition] = [Competition]()
     
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-
+            
             List(teams) { team in
                 VStack(alignment: .leading) {
                     TeamSummary(team: team)
@@ -25,22 +26,34 @@ struct ContentView: View {
             .listStyle(.plain)
             
             Spacer()
-            Button("Click for teams") {
-                Task {
-                    await getTeams(4)
+            HStack {
+                Button("Click for teams") {
+                    Task {
+                        await getTeams(4)
+                    }
                 }
+
+                Button("Click for comps") {
+                    Task {
+                        await getCompetitions([2032, 2072])
+                    }
+                }
+
             }
         }
         .padding()
-//        .onAppear(perform: {
-//            apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
-//        })
     }
     
     func getTeams(_ numTeams: Int = 25) async {
         let ds = FootballDataSource()
         
         teams = await ds.getTeamsList(numTeams)
+    }
+    
+    func getCompetitions(_ areas: [Int] = [Int]()) async {
+        let ds = FootballDataSource()
+        
+        comps = await ds.getCompetitionsList(areas)
     }
 }
 
