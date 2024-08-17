@@ -19,12 +19,12 @@ struct Competition: Identifiable, Decodable {
 }
 
 
-struct Area : Identifiable, Decodable {
-    var id: Int?
-    var name: String?
-    var code: String?
-    var flag: String?
-}
+//struct Area : Identifiable, Decodable {
+//    var id: Int?
+//    var name: String?
+//    var code: String?
+//    var flag: String?
+//}
 
 struct CurrentSeason : Identifiable, Decodable {
     var id: Int?

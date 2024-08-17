@@ -111,4 +111,48 @@ struct FootballDataSource {
         
         return [Competition]()
     }
+    
+    
+    func getAreas() async -> [Area] {
+        
+        // Check we can perform an authorised GET
+        guard apiKey != nil else {
+            return [Area]()
+        }
+        
+        // Form the endpoint URL
+        if let url = URL(string: "https://api.football-data.org/v4/areas") {
+            
+            var request = URLRequest(url: url)
+            request.addValue(apiKey!, forHTTPHeaderField: "X-Auth-Token")
+            
+            do {
+                let (data, response) = try await URLSession.shared.data(for: request)
+                
+                // What was the result
+                if let httpResponse = response as? HTTPURLResponse {
+                
+                    if (httpResponse.statusCode == 200) {
+
+                        let decoder = JSONDecoder()
+                        
+                        do {
+                            let areasList = try decoder.decode(AreaList.self, from: data)
+                            
+                            return areasList.areas
+                        } catch {
+                            print("An error occurred decoding the JSON: \(error)")
+                        }
+                    } else {
+                        print("Status code = \(httpResponse.statusCode)")
+                    }
+                }
+                
+            } catch {
+                print("Error making request: \(error)")
+            }
+        }
+        
+        return [Area]()
+    }
 }
