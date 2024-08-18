@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		641142972C6D569A00BB3CCE /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641142962C6D569A00BB3CCE /* Competition.swift */; };
 		641142992C6D586B00BB3CCE /* CompetitionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641142982C6D586B00BB3CCE /* CompetitionList.swift */; };
+		647ACD192C71E45A00B2C596 /* FootballError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647ACD182C71E45A00B2C596 /* FootballError.swift */; };
 		64D2F1CB2C71317700EFD2BC /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2F1CA2C71317700EFD2BC /* Area.swift */; };
 		64D2F1CD2C7136E600EFD2BC /* AreasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2F1CC2C7136E600EFD2BC /* AreasView.swift */; };
 		FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */; };
@@ -25,6 +26,7 @@
 		641142962C6D569A00BB3CCE /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
 		641142982C6D586B00BB3CCE /* CompetitionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionList.swift; sourceTree = "<group>"; };
 		647A72E12C6D3711001978E9 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		647ACD182C71E45A00B2C596 /* FootballError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballError.swift; sourceTree = "<group>"; };
 		64D2F1CA2C71317700EFD2BC /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		64D2F1CC2C7136E600EFD2BC /* AreasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasView.swift; sourceTree = "<group>"; };
 		FE35D0792C68C67E00F9FDDD /* Football Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				641142962C6D569A00BB3CCE /* Competition.swift */,
 				641142982C6D586B00BB3CCE /* CompetitionList.swift */,
 				64D2F1CA2C71317700EFD2BC /* Area.swift */,
+				647ACD182C71E45A00B2C596 /* FootballError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				647ACD192C71E45A00B2C596 /* FootballError.swift in Sources */,
 				FE35D0922C68D51C00F9FDDD /* Team.swift in Sources */,
 				FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */,
 				FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */,

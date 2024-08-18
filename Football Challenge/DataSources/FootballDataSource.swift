@@ -145,6 +145,16 @@ struct FootballDataSource {
                         }
                     } else {
                         print("Status code = \(httpResponse.statusCode)")
+                        
+                        let decoder = JSONDecoder()
+                        do {
+                            let footballError = try decoder.decode(FootballError.self, from: data)
+                            
+//                            print(footballError.errorCode ?? 0)
+                            print(footballError.message ?? "Null")
+                        } catch {
+                            print("Error decoding the error message: \(error)")
+                        }
                     }
                 }
                 
