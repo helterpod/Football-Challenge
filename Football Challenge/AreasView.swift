@@ -10,34 +10,41 @@ import SwiftUI
 struct AreasView: View {
     @State var areas = [Area]()
     @State var parentId: Int?
+    @State private var selected: Area?
     
     var body: some View {
-        VStack(alignment: .leading) {
-            List (areas) { area in
-                
-                // Display only those areas that are children of Africa Area(2001)
-                if (parentId == nil || area.parentAreaId == parentId!) {
-                    HStack {
-                        Text(String(area.id ?? 0))
-                        Text(area.name ?? "Empty")
-                        Text(area.parentArea ?? "None")
-                        Text(String(area.parentAreaId ?? 0))
+        NavigationView {
+            VStack(alignment: .leading) {
+                List (areas, id: \.self, selection: $selected) { area in
+                    
+                    // Display only those areas that are children of Africa Area(2001)
+                    if (parentId == nil || area.parentAreaId == parentId!) {
+                        HStack {
+                            Text(String(area.id ?? 0))
+                            Text(area.name ?? "Empty")
+                            Text(area.parentArea ?? "None")
+                            Text(String(area.parentAreaId ?? 0))
+                        }
                     }
                 }
-            }
-            .listStyle(.plain)
-        }
-        .onAppear {
-            Task {
-                let ds = FootballDataSource()
+                .listStyle(.plain)
                 
-                areas = await ds.getAreas()
+                Text(selected?.name ?? "")
+                    .padding(.horizontal)
             }
+            .onAppear {
+                Task {
+                    let ds = FootballDataSource()
+                    
+                    areas = await ds.getAreas()
+                }
+            }
+            .navigationTitle("Areas")
         }
     }
 }
 
 #Preview {
-//    AreasView()
+    //    AreasView()
     AreasView(parentId: 2001)
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Area : Identifiable, Decodable {
+struct Area : Identifiable, Decodable, Hashable {
     var id: Int?
     var name: String?
     var countryCode: String?
@@ -21,4 +21,5 @@ struct AreaList : Decodable {
     var count: Int?
     var filters: Filters?
     var areas: [Area] = [Area]()
+//    let isSelected: Bool = false    // Not returned from endpoint, used in GUI
 }

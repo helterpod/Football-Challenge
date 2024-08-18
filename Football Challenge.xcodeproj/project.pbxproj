@@ -12,6 +12,8 @@
 		647ACD192C71E45A00B2C596 /* FootballError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647ACD182C71E45A00B2C596 /* FootballError.swift */; };
 		64D2F1CB2C71317700EFD2BC /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2F1CA2C71317700EFD2BC /* Area.swift */; };
 		64D2F1CD2C7136E600EFD2BC /* AreasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D2F1CC2C7136E600EFD2BC /* AreasView.swift */; };
+		64EBA2552C7203B800E6F85E /* iOSCheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBA2542C7203B800E6F85E /* iOSCheckboxToggleStyle.swift */; };
+		64EBA2572C720E6700E6F85E /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBA2562C720E6700E6F85E /* SelectView.swift */; };
 		FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */; };
 		FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE35D07E2C68C67E00F9FDDD /* ContentView.swift */; };
 		FE35D0812C68C67E00F9FDDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE35D0802C68C67E00F9FDDD /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		647ACD182C71E45A00B2C596 /* FootballError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballError.swift; sourceTree = "<group>"; };
 		64D2F1CA2C71317700EFD2BC /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		64D2F1CC2C7136E600EFD2BC /* AreasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasView.swift; sourceTree = "<group>"; };
+		64EBA2542C7203B800E6F85E /* iOSCheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		64EBA2562C720E6700E6F85E /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		FE35D0792C68C67E00F9FDDD /* Football Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE35D07C2C68C67E00F9FDDD /* Football_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_ChallengeApp.swift; sourceTree = "<group>"; };
 		FE35D07E2C68C67E00F9FDDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64EBA2532C72038700E6F85E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				64EBA2542C7203B800E6F85E /* iOSCheckboxToggleStyle.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FE35D0702C68C67E00F9FDDD = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +83,7 @@
 		FE35D07B2C68C67E00F9FDDD /* Football Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				64EBA2532C72038700E6F85E /* Helpers */,
 				FEB11C632C6BBE6A00C996C4 /* ViewModels */,
 				FE35D08E2C68CDB700F9FDDD /* DataSources */,
 				FE35D08D2C68CDAC00F9FDDD /* Models */,
@@ -82,6 +95,7 @@
 				FE35D0802C68C67E00F9FDDD /* Assets.xcassets */,
 				FE35D0822C68C67E00F9FDDD /* Preview Content */,
 				647A72E12C6D3711001978E9 /* Config.xcconfig */,
+				64EBA2562C720E6700E6F85E /* SelectView.swift */,
 			);
 			path = "Football Challenge";
 			sourceTree = "<group>";
@@ -192,11 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EBA2552C7203B800E6F85E /* iOSCheckboxToggleStyle.swift in Sources */,
 				647ACD192C71E45A00B2C596 /* FootballError.swift in Sources */,
 				FE35D0922C68D51C00F9FDDD /* Team.swift in Sources */,
 				FE35D07F2C68C67E00F9FDDD /* ContentView.swift in Sources */,
 				FE35D07D2C68C67E00F9FDDD /* Football_ChallengeApp.swift in Sources */,
 				64D2F1CD2C7136E600EFD2BC /* AreasView.swift in Sources */,
+				64EBA2572C720E6700E6F85E /* SelectView.swift in Sources */,
 				FEB11C652C6BD71B00C996C4 /* TeamSummary.swift in Sources */,
 				FE35D0942C6A03F300F9FDDD /* FootballDataSource.swift in Sources */,
 				641142972C6D569A00BB3CCE /* Competition.swift in Sources */,
